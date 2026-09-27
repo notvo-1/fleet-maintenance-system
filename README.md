@@ -56,7 +56,7 @@ El diferencial no pasa solo por "digitalizar" la planilla actual, sino por:
 | Componente | Tecnología elegida |
 | --- | --- |
 | Frontend | Vite + TypeScript + React |
-| Backend | .NET 8 (ASP.NET Core Web API) + Entity Framework Core |
+| Backend | .NET 10 (ASP.NET Core Web API) + Entity Framework Core |
 | Base de datos | PostgreSQL |
 | Despliegue | Backend en Render/Railway · DB en Supabase o Aiven · Frontend en Vercel |
 
@@ -64,7 +64,7 @@ El diferencial no pasa solo por "digitalizar" la planilla actual, sino por:
 
 **Frontend:** se eligió TypeScript con Vite por ser la tecnología con la que el equipo se siente más cómodo tras la cursada, lo que reduce el costo de aprendizaje en un proyecto con fecha de entrega fija.
 
-**Backend:** .NET con Entity Framework Core es la tecnología que uno de los integrantes viene formando activamente mediante cursos externos, y encaja bien con la naturaleza del problema: los datos del dominio tienen una estructura relacional clara, con relaciones importantes entre entidades e integridad transaccional necesaria.
+**Backend:** .NET con Entity Framework Core es la tecnología que uno de los integrantes viene formando activamente mediante cursos externos, y encaja bien con la naturaleza del problema: los datos del dominio tienen una estructura relacional clara, con relaciones importantes entre entidades e integridad transaccional necesaria. Se eligió la versión LTS vigente (.NET 10) para asegurar soporte durante todo el desarrollo y hasta después de la entrega final.
 
 **Base de datos:** se eligió PostgreSQL por su buen soporte en EF Core, su facilidad de despliegue en servicios con capa gratuita y por ser una opción neutral respecto del proveedor, sin atar el proyecto exclusivamente al ecosistema Microsoft.
 
@@ -82,6 +82,11 @@ El escenario real del proyecto es de uso interno por parte de un número acotado
 | Alcance de IA para validación de datos puede demandar más tiempo del disponible | Tratarla como objetivo extendido, no bloqueante para el MVP |
 | Uso de datos reales de la empresa en la demo/informe | Anonimizar los datos o construir un dataset ficticio equivalente para la entrega pública |
 | Disponibilidad de tiempo del equipo | Alcance de MVP acotado y priorizado por entregas parciales |
+
+## Documentación adicional
+
+- [Esquema de base de datos](./docs/esquema-bd.md) — modelo relacional, tablas y decisiones de diseño.
+- [Listado de módulos](./docs/modulos.md) — módulos del sistema para el MVP.
 
 ## 5. Cronograma
 
